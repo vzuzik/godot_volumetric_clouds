@@ -28,7 +28,7 @@ Direction, energy, and color from the DirectionalLight3D will be automatically a
 
 ### CASE 3
 By script get node WorldEnvironment then get the 'Environment' property.
-set the 'sky' property as CloudSky.new().
+set the 'Sky' property as CloudSky.new().
 Start your project by pressing F5.
 
 ### Screenshots
