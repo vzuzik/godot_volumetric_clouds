@@ -71,6 +71,10 @@ func _init():
 	process_mode = Sky.PROCESS_MODE_INCREMENTAL
 	radiance_size = Sky.RADIANCE_SIZE_64
 	
+	sky_uniforms[0].resize(SKY_CONSTANT_SIZE)
+	sky_uniforms[1].resize(SKY_CONSTANT_SIZE)
+	sky_uniforms[2].resize(SKY_CONSTANT_SIZE)
+	
 	var frames_sqrt = int(sqrt(frames_to_update))
 	update_region_size = textureSize / frames_sqrt
 	num_workgroups = update_region_size / 8
@@ -183,7 +187,7 @@ var texture_rd = [ RID(), RID(), RID() ]
 var texture_set = [ RID(), RID(), RID() ]
 var noise_uniform_set = RID()
 var sky_uniform_set = [ RID(), RID(), RID() ]
-var sky_uniforms = [ PackedFloat32Array(SKY_CONSTANT_SIZE), PackedFloat32Array(SKY_CONSTANT_SIZE), PackedFloat32Array(SKY_CONSTANT_SIZE) ]
+var sky_uniforms = [ PackedFloat32Array(), PackedFloat32Array(), PackedFloat32Array() ]
 var noise_sampler
 var sky_sampler
 

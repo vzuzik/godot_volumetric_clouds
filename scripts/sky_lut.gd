@@ -113,16 +113,16 @@ func _initialize_compute_code():
 	initialized = true
 
 func render_lut():
-	var uniforms = PackedFloat32Array(8)
-	uniforms[0] = texture_size.x
-	uniforms[1] = texture_size.y
-	uniforms[2] = 0.0
-	uniforms[3] = 0.0
+	var uniforms = PackedFloat32Array()
+	uniforms.append(texture_size.x)
+	uniforms.append(texture_size.y)
+	uniforms.append(0.0)
+	uniforms.append(0.0)
 	
-	uniforms[4] = light_direction.x
-	uniforms[5] = light_direction.y
-	uniforms[6] = light_direction.z
-	uniforms[7] = 0.0
+	uniforms.append(light_direction.x)
+	uniforms.append(light_direction.y)
+	uniforms.append(light_direction.z)
+	uniforms.append(0.0)
 
 	# Run our compute shader
 	var compute_list = rd.compute_list_begin()
