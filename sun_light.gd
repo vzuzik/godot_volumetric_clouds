@@ -19,7 +19,8 @@ func _ready():
 
 func _notification(what):
 	if what == NOTIFICATION_PREDELETE:
-		_sky.sunLight = null
+		if is_instance_valid(_sky):
+			_sky.sunLight = null
 
 func _process(delta:float):
 	if is_instance_valid(_sky):
