@@ -16,10 +16,11 @@ Create new Scene 3D
 Add WorldEnvironment to your scene and create empty Environment
 
 ## CASE 1
-In your Environment create new CloudSky to the "Sky" property. Then tweak the exposed properties as you see fit.
+In your Environment create new CloudSky to the "Sky" property. Then tweak the exposed properties as you see fit
 You can control sun orientation by changind the "sunAngles" property
 
 ## CASE 2
+In your Environment create new CloudSky to the "Sky" property. Then tweak the exposed properties as you see fit
 Add DirectionLight3D to your scene, attach the "sun_light.gd" script, reload project and now you sun will be controller by DirectionalLight3D
 Direction, energy, and color from the DirectionalLight3D will be automatically applied to the sun
 
