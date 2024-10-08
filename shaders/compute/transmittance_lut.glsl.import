@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://d2ni6doio7pp6"
+path="res://.godot/imported/transmittance_lut.glsl-33d163d43ca8e95c07d8ead2f9fec92a.res"
+
+[deps]
+
+source_file="res://cloud_sky/shaders/compute/transmittance_lut.glsl"
+dest_files=["res://.godot/imported/transmittance_lut.glsl-33d163d43ca8e95c07d8ead2f9fec92a.res"]
+
+[params]
+

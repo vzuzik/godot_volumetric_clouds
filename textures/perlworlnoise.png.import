@@ -1,0 +1,27 @@
+[remap]
+
+importer="3d_texture"
+type="CompressedTexture3D"
+uid="uid://di4exf7pfqua8"
+path.bptc="res://.godot/imported/perlworlnoise.png-18bedeb2d8182bdc67858cd7ac46620d.bptc.ctex3d"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://cloud_sky/textures/perlworlnoise.png"
+dest_files=["res://.godot/imported/perlworlnoise.png-18bedeb2d8182bdc67858cd7ac46620d.bptc.ctex3d"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=true
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+slices/horizontal=128
+slices/vertical=1
